@@ -7,6 +7,8 @@ document.getElementById('user-form').addEventListener('submit', async (event) =>
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const phone = document.getElementById('phone').value;
+    const gender = document.getElementById('gender').value;
+    const aboutme = document.getElementById('aboutMe').value;
 
     try {
         // Send data to backend
@@ -15,7 +17,7 @@ document.getElementById('user-form').addEventListener('submit', async (event) =>
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ name, email, phone }),
+            body: JSON.stringify({ name, email, phone, gender, aboutme }),
         });
 
         if (response.ok) {
