@@ -1,4 +1,4 @@
-const API_URL = 'https://8ed2-2405-201-400f-687c-70e4-356e-57df-e86a.ngrok-free.app/api/userdata';
+const API_URL = 'https://0296-2405-201-400f-687c-e5ea-d06f-280c-61e9.ngrok-free.app';
 
 document.getElementById('user-form').addEventListener('submit', async (event) => {
     event.preventDefault();
